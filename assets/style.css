@@ -31,7 +31,39 @@ a {
     display: flex;
     gap: 5px;
 }
+
+.banner-1{
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    align-items: center;
+    gap: 20px;
+}
+
+#banner{
+    height: 355px;
+     width: 570px;
+    max-width: 100%;
+    /* width: 80vw; */
+    height: auto;    
+}
+
+.banner-2{
+    font-family: 'Noto Serif';
+}
+
+.banner-3{
+    color: #E95A08;
+}
+
+.banner-4{
+    font-family: 'Inter';
+    color: gray;
+}
 @media screen and (max-width:576px) {
     .nav-3{display: none;}
     #logo{width: 63px; height: 38px;}
+    #banner{width: 100%; height: auto;}
+    .banner-1{flex-direction: column;}
 }
