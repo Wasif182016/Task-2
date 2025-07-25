@@ -106,6 +106,51 @@ a {
   border: none;
   cursor: pointer;
 }
+
+.lover-0{
+  margin: 1rem 2rem;
+  padding: 20px;
+}
+
+.lover-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lover-3 {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.lover-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+  .lover-3 {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+.trust-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
+
+
 @media screen and (max-width:576px) {
     .nav-3{display: none;}
     #logo{width: 63px; height: 38px;}
@@ -114,4 +159,8 @@ a {
     .plant-5 {grid-template-columns: repeat(2, 1fr);}
     .plant-6 img {max-width: 100%;}
     .plant-5 > div:nth-child(n+7) {display: none;}
+    .lover-0 {padding: 0 1rem; overflow-x: hidden; }
+    .lover-1{flex-direction: column;}
+    .lover-img{width:100%; max-width: 100%; height: auto; object-fit: cover;}
+    .trust{display: none;}
 }
